@@ -42,7 +42,7 @@ class GameOverScene extends Phaser.Scene {
             restartButton.setScale(0.5); // Restablece el tamaño original
         });
 
-        // Añadir evento de clic para reiniciar el juego
+        // Botón para reiniciar el juego
         restartButton.on('pointerdown', () => {
             console.log('GameOverScene: Botón de reinicio clickeado');
            
@@ -50,7 +50,7 @@ class GameOverScene extends Phaser.Scene {
             console.log('GameOverScene: button_click reproducido');
   
 
-            // Resetear el registry para reiniciar completamente
+            // Reiniciar completamente todo
             this.registry.set('score', 0);
             this.registry.set('level', 1);
             this.scene.start('Game');

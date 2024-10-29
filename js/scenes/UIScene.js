@@ -54,4 +54,3 @@ class UIScene extends Phaser.Scene {
         }
     }
 }
-

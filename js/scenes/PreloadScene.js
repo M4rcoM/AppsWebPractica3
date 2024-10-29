@@ -1,5 +1,4 @@
 // Esta escena carga todos los recursos
-
 // js/scenes/PreloadScene.js
 
 class PreloadScene extends Phaser.Scene {
@@ -9,7 +8,7 @@ class PreloadScene extends Phaser.Scene {
 
     preload() {
         console.log('PreloadScene: Cargando assets...');
-        // Carga de imágenes
+        // Imágenes
         this.load.image('background', 'assets/imagenes/background.png');
         this.load.image('player', 'assets/imagenes/player.png');
         this.load.image('enemy', 'assets/imagenes/enemy.png');
@@ -18,7 +17,7 @@ class PreloadScene extends Phaser.Scene {
         this.load.image('gameover', 'assets/imagenes/gameover.png');
         this.load.image('restart_button', 'assets/imagenes/restart_button.png');
 
-        // Carga de audio
+        // Audio
         this.load.audio('bg_music', ['assets/audio/background_music.mp3', 'assets/audio/background_music.mp3']);
         this.load.audio('move_sound', 'assets/audio/move_sound.mp3');
         this.load.audio('collision_sound', 'assets/audio/collision_sound.mp3');
