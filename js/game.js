@@ -1,4 +1,4 @@
-//
+// Archivo principal que inicia el juego
 // js/game.js
 
 const config = {
@@ -16,7 +16,7 @@ const config = {
     scene: [BootScene, PreloadScene, GameScene, UIScene, GameOverScene]
 };
 
-// Inicialización del juego (asegurándote de que se realiza después de la interacción del usuario)
+// Inicialización del juego con un botón de inicio
 document.getElementById('startButton').addEventListener('click', () => {
     document.getElementById('startButton').style.display = 'none';
     const game = new Phaser.Game(config);
