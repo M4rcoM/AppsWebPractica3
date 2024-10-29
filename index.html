@@ -1,0 +1,51 @@
+<!--Marco Matellán Martín
+    Desarrollo de un Videojuego Web con Phaser 3
+-->>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Practica 3 - APPS WEB</title>
+    <h1>Practica 3 - Videojuego Web con Phaser 3</h1>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3/dist/phaser.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: #6a5ab1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        #game-container {
+            width: 800px;
+            height: 600px;
+            display: block;
+        }
+        #startButton {
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="startButton">Iniciar Juego</button>
+    <div id="game-container"></div>
+
+    <!-- Incluir todas las escenas antes del archivo principal -->
+    <script src="js/scenes/BootScene.js"></script>
+    <script src="js/scenes/PreloadScene.js"></script>
+    <script src="js/scenes/GameScene.js"></script>
+    <script src="js/scenes/UIScene.js"></script>
+    <script src="js/scenes/GameOverScene.js"></script>
+    <script src="js/game.js"></script>
+
+</body>
+</html>
